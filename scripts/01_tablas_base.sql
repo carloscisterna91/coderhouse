@@ -72,12 +72,14 @@ CREATE TABLE Ventas (
     constraint fk_vendedores foreign key (id_vendedor) references vendedores(id_vendedores)
 )
 
+delete  ventas 
+
 insert into		Ventas  (id_cliente,id_producto,id_vendedor,fecha_venta,cantidad,importe,descripcion)	
 				values  (1,1,1,'20260805',4,70000,null),
 						(3,2,2,'20260805',2,150000,null),
 						(4,3,4,'20260805',1,50000,null),
 						(2,5,3,'20260805',4,10000,null),
-						(5,4,5,'20260805',4,45000,null)
+						(5,4,5,'20260805',4,45000,'falta entregar')
 
 
 
